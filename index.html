@@ -525,7 +525,10 @@
 			</div>
 			<div class="row animate-box">
 				<div class="col-md-10 col-md-offset-1">
-					<form name="Proponente" class="form-inline" netlify>
+					<form name="Proponente" class="form-inline" netlify-honeypot="bot-field" netlify>
+						<p class="hidden">
+							<label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+						</p>
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group">
 								<label for="name" class="sr-only">Nome</label>
